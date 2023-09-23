@@ -1,0 +1,35 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@layer components {
+  .menu-item {
+    @apply block border-b border-gray-100 font-normal py-2 pr-1 pl-1 md:border-0 md:p-0 text-sm;
+  }
+  .req-input {
+    @apply block w-full appearance-none rounded border border-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-primary focus:ring-0 hover:border-primary;
+  }
+  .req-textarea {
+    @apply mb-3 block w-full resize appearance-none rounded border border-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none focus:ring-0;
+  }
+  .req-label {
+    @apply mb-3 block text-base tracking-wide text-gray-700;
+  }
+  .form-btn {
+    @apply inline-block rounded-md  border-primary border-2 py-5 text-center m-5 text-lg px-3 md:px-5 capitalize;
+  }
+  .table-input {
+    @apply block w-full appearance-none border-none focus-visible:border-none focus:border-none focus:border-0 ring-0 ring-white focus:ring-white focus:ring-opacity-0 text-right mr-10;
+  }
+}
+@import "variable";
+@import "style";
+@import "forms/input";

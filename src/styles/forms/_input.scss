@@ -1,0 +1,98 @@
+.input__selection {
+  .ant-select-selector {
+    height: 45px !important;
+    border-radius: 0.25rem !important;
+    align-items: center !important;
+    box-shadow: none !important;
+    &:hover {
+      border-color: $primary !important;
+    }
+    &:focus {
+      border-color: $primary !important;
+    }
+  }
+  .ant-select-selection-search-input {
+    height: 2.6rem !important;
+    &:focus {
+      border-width: 0px !important;
+      outline: none !important;
+      --tw-ring-color: transparent;
+      // color: transparent;
+    }
+  }
+}
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: $primary;
+}
+.input__textarea {
+  width: 100%;
+  &:hover {
+    border-color: $primary !important;
+  }
+  &:focus {
+    border-color: $primary !important;
+  }
+}
+
+.textarea__wrap {
+  margin-top: 30px;
+}
+.ant-form-item-label {
+  margin-top: 12px;
+}
+
+// DATEPICKER
+.ant-picker {
+  height: 45px;
+  width: 100%;
+  border-radius: 0.25rem !important;
+  &:hover {
+    border-color: $primary;
+  }
+}
+.ant-picker-focused {
+  box-shadow: none;
+  border-color: $primary;
+}
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: $primary;
+}
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner {
+  &::before {
+    border-color: $primary;
+  }
+}
+.ant-picker-today-btn {
+  color: $primary;
+  &:hover {
+    color: $primary;
+  }
+}
+
+// INPUT CHECKED
+
+.ant-checkbox-input {
+  color: red !important;
+}
+
+// FORM DIVIDER
+.ant-divider-horizontal.ant-divider-with-text {
+  margin-bottom: 0;
+}
+
+.ant-input-number{
+  height: 45px;
+  width: 100%;
+  border-radius: 0.25rem !important;
+  &:hover {
+    border-color: $primary;
+  }
+}
+.ant-input-number-focused{
+  box-shadow: none;
+  border-color: $primary;
+  input{
+    padding: 1.25rem 1rem!important;
+  }
+}
